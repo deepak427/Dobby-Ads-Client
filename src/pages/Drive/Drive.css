@@ -1,0 +1,90 @@
+.drive-main-container {
+  margin-top: 4rem;
+}
+
+.drive-main-container .folder-icon-container {
+    padding: 1rem;
+    margin-left: 0.5rem;
+    width: fit-content;
+}
+
+.drive-main-container .all-folder-store-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+    grid-gap: 1rem;
+    grid-auto-flow: row;
+}
+
+.drive-main-container .folder-icon-container svg {
+    width: 3rem;
+    fill: grey;
+    cursor: pointer;
+}
+
+.drive-main-container .folder-icon-container svg:hover{
+    fill: darkgray;
+}
+
+.drive-main-container .popup {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.popup .popup-content {
+  flex-direction: column;
+  display: flex;
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.popup-content .category-btn {
+  background-color: white;
+  padding: 1rem;
+  border: solid 2px #0003;
+  margin: 0.5rem 0.5rem 0 1rem;
+  cursor: pointer;
+}
+
+.popup-content form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup-content form .submit-btn {
+    margin-top: 0.5rem;
+  padding: 0.25rem 0.8rem;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  background-color: rgb(24, 24, 24);
+  color: white;
+  cursor: pointer;
+}
+
+input {
+  margin: 0.25rem 0;
+  padding: 10px;
+  border: solid 1px #0000003e;
+  width: 20rem;
+}
+
+.popup-content .selected-category-btn {
+  background-color: #fcf5e5;
+  border-color: green;
+}
+
+.popup-content .category-btn:hover {
+  background-color: #f9f6ee;
+}

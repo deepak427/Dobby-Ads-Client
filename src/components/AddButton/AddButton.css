@@ -1,0 +1,18 @@
+.add-btn {
+    border-radius: 50%;
+    right: 3rem;
+    cursor: pointer;
+    position: fixed;
+    bottom: 1.5rem;
+    transition: 0.2s;
+}
+
+.add-btn svg {
+    height: 2.5rem;
+    transition: 0.2s;
+    color: darkslategrey;
+}
+
+.add-btn svg:hover{
+    opacity: 0.8;
+}
